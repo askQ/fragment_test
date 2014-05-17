@@ -5,28 +5,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
- 
-	<ScrollView
- 		 android:layout_height="fill_parent"  
-  		 android:layout_width="fill_parent"  >
-    <RelativeLayout  
- 		 android:orientation="vertical"  
- 		 android:layout_width="200dip"  
-  		android:layout_height="200dip"  
-  	>  
+ <ScrollView
+android:layout_height="fill_parent"
+android:layout_width="fill_parent">
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<TextView
+            android:id="@+id/textView1"
+            android:layout_width="120dip"
+               			android:text="全部的結果"
+            android:layout_height="40dip"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    
    <fragment
         android:name="com.javacodegeeks.android.fragmentstest.FragmentOne"
         android:id="@+id/fragment_place"
-   		android:layout_width="match_parent"
-   		android:layout_height="match_parent" />
+   		android:layout_width="fill_parent"
+   		android:layout_height="50dp" />
+<TextView
+            android:id="@+id/textView2"
+            android:layout_width="120dip"
+            android:layout_height="40dip"
+               			android:text="只有男生"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
 
    <fragment
        android:id="@+id/fragment_1"
        android:name="com.javacodegeeks.android.fragmentstest.FragmentTwo"
-       android:layout_width="200dip"
-       android:layout_height="269dp" />
-    
-        </RelativeLayout>
-    </ScrollView>
+       android:layout_width="fill_parent"
+       android:layout_height="50dp" />
+<TextView
+            android:id="@+id/textView3"
+            android:layout_width="120dip"
+            android:layout_height="40dip"
+               			android:text="只有女生"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+   <fragment
+       android:id="@+id/fragment_2"
+       android:name="com.javacodegeeks.android.fragmentstest.FragmentThree"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp" />
+   
+    <ListView
+	android:id="@+id/widget34"
+	android:layout_width="fill_parent"
+       android:layout_height="200dp" 
+	/>
+    <TextView
+	android:id="@+id/text_givecommand"
+	android:layout_width="120dip"
+     android:layout_height="40dip"
+	android:text="give command here"></TextView>
+	
+<EditText
+	android:id="@+id/edittext_command"
+	android:layout_width="fill_parent"
+       android:layout_height="200dp"  />
 
+<Button
+	android:id="@+id/button_gohome"
+	android:layout_width="120dip"
+     android:layout_height="40dip"
+	android:text="回主業"
+	/>
+</LinearLayout>
+</ScrollView>
 </LinearLayout>

@@ -22,17 +22,17 @@ public class MainActivity extends Activity {
 	}
 
 	public void selectFrag(View view) {
-		 Fragment fr,f2;
+		 Fragment fr,f2,f3;
 			 fr = new FragmentOne();
 			 f2 = new FragmentTwo();
-			 
+			 f3 = new FragmentThree();
 		 FragmentManager fm = getFragmentManager();
 		 fr = (FragmentOne)fm.findFragmentById(R.id.fragment_place);
 		 //firstfragment should display one pie chart
 		 
 		 f2 = (FragmentTwo)fm.findFragmentById(R.id.fragment_1);
 		 //at second fragment's place should display another
-		 
+		 f3 = (FragmentThree)fm.findFragmentById(R.id.fragment_2);
 	     /*
 		 FragmentTransaction fragmentTransaction = fm.beginTransaction();
 	     fragmentTransaction.replace(R.id.fragment_place, fr);
